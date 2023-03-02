@@ -1,0 +1,31 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+==杨柏蔼
+
+~~~
+{}{img_left}{pictures/portrait.jpg}{alt text}{160}{160}{https://raw.githubusercontent.com/Y-boy/Y-boy.github.io/master/}
+Ph.D candidate in Art ,\n
+[http://design.hnu.edu.cn/ 湖南大学设计艺术学院], \n
+E-mail(edu): yangboai@hnu.edu.com \n
+E-mail(gmail): yangboai0422@gmail.com \n
+Github: [https://github.com/Y-boy Y-boy] \n
+~~~
+
+== 履历
+- \[ 2012\/09 - 2016\/06 ] 杭州电子科技大学-计算机科学与技术-学士
+- \[ 2016\/09 - 2018\/06 ] 华南师范大学-软件工程-硕士
+- \[ 2018\/08 - 2019\/11 ] 华为技术有限公司-云服务开发工程师
+- \[ 2021\/09 - now ] 湖南大学-艺术学-博士生
+
+== 攻读博士期间成果
+
+=== 学术论文
+. Wu J, *Yang B*, Liu Y, et al. CLEC: Combination Locality Based Erasure Code for Permissioned Blockchain Storage\[J]. CMC-COMPUTERS MATERIALS & CONTINUA, 2022, 73(3): 5137-5150.
+. Liu Y, *Yang B*, Wu J, et al. HotLT: LT Code-Based Secure and Reliable Consortium Blockchain Storage Systems\[C]\/\/International Conference on Artificial Intelligence and Security. Springer, Cham, 2022: 378-391.
+. *杨柏蔼*,赵山,刘芳.无服务器计算技术研究综述\[J].计算机工程与科学,2022,44(04):611-619.
+
+=== 发明专利
+. 一种基于深度学习的艺术品图像多层级描述自动生成方法
+. 一种融合多粒度多模态的艺术品图像描述生成方法
+
+=== 布展、竞赛
+. IEEE VIS'2022 - /Under the Green: Visual data storytelling the process of urban CO2 neutralization by forests. /.
