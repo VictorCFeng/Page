@@ -1,31 +1,39 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
-==杨柏蔼
+==Cheng Feng
 
 ~~~
-{}{img_left}{pictures/portrait.jpg}{alt text}{160}{160}{https://raw.githubusercontent.com/Y-boy/Y-boy.github.io/master/}
-Ph.D candidate in Art ,\n
-[http://design.hnu.edu.cn/ 湖南大学设计艺术学院], \n
-E-mail(edu): yangboai@hnu.edu.com \n
-E-mail(gmail): yangboai0422@gmail.com \n
-Github: [https://github.com/Y-boy Y-boy] \n
+{}{img_left}{pictures/Cheng_Feng-modified.png}{alt text}{160}{160}{https://raw.githubusercontent.com/Y-boy/Y-boy.github.io/master/}
+Ph.D candidate in Electrical Engineering, Department of Electrical Engineering, Tsinghua University, China \n
+E-mail(edu): fengc19@mails.tsinghua.edu.cn \n
+[https://scholar.google.com/citations?user=IYYhpdUAAAAJ&hl Google Scholar] \n
+[https://www.researchgate.net/profile/Cheng-Feng-7 ResearchGate] \n
 ~~~
 
-== 履历
-- \[ 2012\/09 - 2016\/06 ] 杭州电子科技大学-计算机科学与技术-学士
-- \[ 2016\/09 - 2018\/06 ] 华南师范大学-软件工程-硕士
-- \[ 2018\/08 - 2019\/11 ] 华为技术有限公司-云服务开发工程师
-- \[ 2021\/09 - now ] 湖南大学-艺术学-博士生
+~~~
+{Highlight}{}
+Honorably, I am currently a visiting scholar in Automatic Control Lab (ifA), Swiss Federal Institute of Technology (ETH) Zurich, Switzerland 
+~~~
 
-== 攻读博士期间成果
+== Education
+- \[ 2023\/02 - Now ] Visiting Scholar \n
+Automatic Control Lab (ifA), Swiss Federal Institute of Technology (ETH) Zurich, Switzerland \n
+Supervisor: Prof. Florian Dorfler \n
+- \[ 2019\/09 - Now ] Ph.D. Candidate, Electrical Engineering \n
+Department of Electrical Engineering, Tsinghua University, China \n
+Supervisor: Prof. Qixin Chen \n
+- \[ 2015\/09 - 2019\/06 ] B.E., Electrical Engineering \n
+Department of Electrical Engineering, Huazhong University of Science and Technology, China
 
-=== 学术论文
-. Wu J, *Yang B*, Liu Y, et al. CLEC: Combination Locality Based Erasure Code for Permissioned Blockchain Storage\[J]. CMC-COMPUTERS MATERIALS & CONTINUA, 2022, 73(3): 5137-5150.
-. Liu Y, *Yang B*, Wu J, et al. HotLT: LT Code-Based Secure and Reliable Consortium Blockchain Storage Systems\[C]\/\/International Conference on Artificial Intelligence and Security. Springer, Cham, 2022: 378-391.
-. *杨柏蔼*,赵山,刘芳.无服务器计算技术研究综述\[J].计算机工程与科学,2022,44(04):611-619.
 
-=== 发明专利
-. 一种基于深度学习的艺术品图像多层级描述自动生成方法
-. 一种融合多粒度多模态的艺术品图像描述生成方法
+== Publications
+. *Cheng Feng*, Kedi Zheng, Yangze Zhou, Peter Palensky, Qixin Chen. Update Scheduling for ADMM-based Energy Sharing in Virtual Power Plants Considering Massive Prosumer Access. /IEEE Transactions on Smart Grid/, Early Access.
+. *Cheng Feng*, Qixin Chen, Yi Wang, Peng-Yong Kong, Hongchao Gao, Songsong Chen. Provision of Contin-gency Frequency Services for Virtual Power Plants with Aggregated Models. /IEEE Transactions on Smart Grid/, Early Access.
+. *Cheng Feng*, Qixin Chen, Yi Wang, Jiaqi Ma, Xuanyuan Wang. (2022). Frequency Regulation Service Provision for Virtual Power Plants through 5G RAN Slicing. /IEEE Transactions on Smart Grid/, Early Access.
+. *Cheng Feng*, Yi Wang, Xuanyuan Wang, Qixin Chen. (2021). Device Access Optimization for Virtual Power Plants in Heterogeneous Networks. /IEEE Transactions on Smart Grid/, 13(2), 1478-1489.
+. Chenyu Zhou, *Cheng Feng* (Contribute Equally), Yi Wang. (2021). Spatial-Temporal Energy Management of Base Stations in Cellular Networks. /IEEE Internet of Things Journal/, 9(13), 10588-10599.
+. Adrian Lang, Yi Wang, *Cheng Feng*, Eleni Stai, Gabriela Hug. (2021). Data Aggregation Point Placement for Smart Meters in the Smart Grid. /IEEE Transactions on Smart Grid/, 13(1), 541-554.
+. *Cheng Feng*, Yi Wang, Qixin Chen, Yi Ding, Goran Strbac, Chongqing Kang. (2021). Smart grid encounters edge computing: Opportunities and applications. /Advances in Applied Energy/, 1, 100006.
+. *Cheng Feng*, Yi Wang, Kedi Zheng, Qixin Chen. (2019). Smart meter data-driven customizing price design for retailers. /IEEE Transactions on Smart Grid/, 11(3), 2043-2054.
+. Yi Wang, Qixin Chen, Ning Zhang, *Cheng Feng*, Fei Teng, Mingyang Sun, Chongqing Kang. (2019). Fu-sion of the 5G communication and the ubiquitous electric internet of things: application analysis and research prospects (in Chinese). /Power System Technology/, 43(5), 1575-1585.
 
-=== 布展、竞赛
-. IEEE VIS'2022 - /Under the Green: Visual data storytelling the process of urban CO2 neutralization by forests. /.
+
