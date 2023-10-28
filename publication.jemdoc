@@ -1,0 +1,55 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+
+== Journal Papers
+- *Cyber-Physcial System Optimization*
+. Update Scheduling for ADMM-based Energy Sharing in Virtual Power Plants Considering Massive Prosumer Access. (2023).\n
+  *Cheng Feng*, Kedi Zheng, Yangze Zhou, Peter Palensky, Qixin Chen.\n
+  /IEEE Transactions on Smart Grid/, 14(5), 3961-3975.
+
+. Frequency Regulation Service Provision for Virtual Power Plants through 5G RAN Slicing. (2022).\n
+  *Cheng Feng*, Qixin Chen, Yi Wang, Jiaqi Ma, Xuanyuan Wang.\n
+  /IEEE Transactions on Smart Grid/, 13(6), 4943-4956.
+
+. Device Access Optimization for Virtual Power Plants in Heterogeneous Networks. (2021).\n
+  *Cheng Feng*, Yi Wang, Xuanyuan Wang, Qixin Chen.\n
+  /IEEE Transactions on Smart Grid/, 13(2), 1478-1489.
+
+. Data Aggregation Point Placement for Smart Meters in the Smart Grid. (2021). \n  
+  Adrian Lang, Yi Wang, *Cheng Feng*, Eleni Stai, Gabriela Hug.\n
+  /IEEE Transactions on Smart Grid/, 13(1), 541-554.
+
+. Fusion of the 5G communication and the ubiquitous electric internet of things: application analysis and research prospects (in Chinese). (2019). \n  
+  Yi Wang, Qixin Chen, Ning Zhang, *Cheng Feng*, Fei Teng, Mingyang Sun, Chongqing Kang.\n
+  /Power System Technology/, 43(5), 1575-1585.
+
+- *Power System Stability and Control*
+
+.  Joint Oscillation Damping and Inertia Provision Service for Converter-Interfaced Generation. (2023).\n
+   *Cheng Feng*, Linbin Huang, Xiuqiang He, Yi Wang, Florian Dorfler, Qixin Chen.\n
+   /Submitted to IEEE Transactions on Power Systems/, Under Review. Available on Arxiv, 2309.01321.
+
+.  Provision of Contingency Frequency Services for Virtual Power Plants with Aggregated Models. (2023).\n
+   *Cheng Feng*, Qixin Chen, Yi Wang, Peng-Yong Kong, Hongchao Gao, Songsong Chen.\n
+   /IEEE Transactions on Smart Grid/, 14(4), 2798-2811.
+
+- *Power System Flexibility and Intelligent Energy Management*
+
+.  Spatial-Temporal Energy Management of Base Stations in Cellular Networks. (2021).\n
+   Chenyu Zhou, *Cheng Feng* (Contribute Equally), Yi Wang.\n
+   /IEEE Internet of Things Journal/, 9(13), 10588-10599.
+
+.  Smart grid encounters edge computing: Opportunities and applications. (2021).
+   *Cheng Feng*, Yi Wang, Qixin Chen, Yi Ding, Goran Strbac, Chongqing Kang.\n
+    /Advances in Applied Energy/, 1, 100006.
+
+.  Review of energy management for data centers in energy internet (in Chinese). (2020) \n  
+   *Cheng Feng*, Yi Wang, Qixin Chen, Xuan Zhang, and Gang Luo.\n
+   /Electric Power Automation Equipment/, 40(7), 1-9.
+
+.  Smart meter data-driven customizing price design for retailers. (2019).\n
+   *Cheng Feng*, Yi Wang, Kedi Zheng, Qixin Chen.\n
+   /IEEE Transactions on Smart Grid/, 11(3), 2043-2054.
+
+== Conference Papers  
+
+
