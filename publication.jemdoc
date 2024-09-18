@@ -2,6 +2,15 @@
 
 == Journal Papers
 - *Cyber-Physcial System Optimization*
+
+. Goal-Oriented Wireless Communication Resource Allocation for Cyber-Physical Systems. (2024).\n
+  *Cheng Feng*, Kedi Zheng, Yi Wang, Kaibin Huang, Qixin Chen.\n
+  /IEEE Transactions on Wireless Communication/, Early Access.
+
+. Connection-Aware P2P Trading: Simultaneous Trading and Peer Selection. (2024).\n
+  *Cheng Feng*, Kedi Zheng, Lanqing Shan, et al.\n
+  /Submitted to Applied Energy/, Available on Arxiv, 2402.11769.  
+
 . Update Scheduling for ADMM-based Energy Sharing in Virtual Power Plants Considering Massive Prosumer Access. (2023).\n
   *Cheng Feng*, Kedi Zheng, Yangze Zhou, Peter Palensky, Qixin Chen.\n
   /IEEE Transactions on Smart Grid/, 14(5), 3961-3975.
@@ -25,7 +34,7 @@
 - *Power System Stability and Control*
 
 .  Joint Oscillation Damping and Inertia Provision Service for Converter-Interfaced Generation. (2023).\n
-   *Cheng Feng*, Linbin Huang, Xiuqiang He, Yi Wang, Florian Dorfler, Qixin Chen.\n
+   *Cheng Feng*, Linbin Huang, Xiuqiang He, Yi Wang, Florian Dorfler, Chongqing Kang.\n
    /Submitted to IEEE Transactions on Power Systems/, Under Review. Available on Arxiv, 2309.01321.
 
 .  Provision of Contingency Frequency Services for Virtual Power Plants with Aggregated Models. (2023).\n
