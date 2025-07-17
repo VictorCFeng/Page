@@ -1,64 +1,88 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
 
-== Journal Papers
-- *Cyber-Physcial System Optimization*
 
-. Goal-Oriented Wireless Communication Resource Allocation for Cyber-Physical Systems. (2024).\n
-  *Cheng Feng*, Kedi Zheng, Yi Wang, Kaibin Huang, Qixin Chen.\n
-  /IEEE Transactions on Wireless Communication/, Early Access.
 
-. Connection-Aware P2P Trading: Simultaneous Trading and Peer Selection. (2024).\n
-  *Cheng Feng*, Kedi Zheng, Lanqing Shan, et al.\n
-  /Submitted to Applied Energy/, Available on Arxiv, 2402.11769.  
+== *Renewable-dominated Power System Flexibility and Stability*
 
-. Update Scheduling for ADMM-based Energy Sharing in Virtual Power Plants Considering Massive Prosumer Access. (2023).\n
-  *Cheng Feng*, Kedi Zheng, Yangze Zhou, Peter Palensky, Qixin Chen.\n
-  /IEEE Transactions on Smart Grid/, 14(5), 3961-3975.
+- Optimal Participation Design of DERs in General Frequency Shaping Services. (2025).\n
+*Cheng Feng*, Siyuan Wang, H. Oliver Gao, Fengqi You.\n  
+/IEEE Transactions on Power Systems/, Early Access.
 
-. Frequency Regulation Service Provision for Virtual Power Plants through 5G RAN Slicing. (2022).\n
-  *Cheng Feng*, Qixin Chen, Yi Wang, Jiaqi Ma, Xuanyuan Wang.\n
-  /IEEE Transactions on Smart Grid/, 13(6), 4943-4956.
+- Hybrid Oscillation Damping and Inertia Management for Distributed Energy Resources. (2025).\n  
+*Cheng Feng*, Linbin Huang, Xiuqiang He, Yi Wang, Florian Dörfler, Chongqing Kang.\n  
+/IEEE Transactions on Power Systems/, Early Access.
 
-. Device Access Optimization for Virtual Power Plants in Heterogeneous Networks. (2021).\n
-  *Cheng Feng*, Yi Wang, Xuanyuan Wang, Qixin Chen.\n
-  /IEEE Transactions on Smart Grid/, 13(2), 1478-1489.
+- Unified Decentralized Small-Signal Stability Criterion for Grid-Connected Converters. (2025).\n  
+*Cheng Feng*, Fengqi You.\n  
+/IEEE Transactions on Power Systems/, Under 2nd round Review.
 
-. Data Aggregation Point Placement for Smart Meters in the Smart Grid. (2021). \n  
-  Adrian Lang, Yi Wang, *Cheng Feng*, Eleni Stai, Gabriela Hug.\n
-  /IEEE Transactions on Smart Grid/, 13(1), 541-554.
+- Connection-Aware P2P Trading: Simultaneous Trading and Peer Selection. (2024).\n  
+*Cheng Feng*, Kedi Zheng, Lanqing Shan, Hani Alers, Qixin Chen, Lampros Stergioulas, Hongye Guo. \n  
+/Applied Energy/ 377: 124658.
 
-. Fusion of the 5G communication and the ubiquitous electric internet of things: application analysis and research prospects (in Chinese). (2019). \n  
-  Yi Wang, Qixin Chen, Ning Zhang, *Cheng Feng*, Fei Teng, Mingyang Sun, Chongqing Kang.\n
-  /Power System Technology/, 43(5), 1575-1585.
+- Optimal grid-forming BESS management incorporating internal battery physics. (2025).\n 
+Yuanbo Chen, Kedi Zheng, *Cheng Feng*, Junling Huang, Hongye Guo, Haiwang Zhong.\n  
+/Applied Energy/ 385: 125448.
 
-- *Power System Stability and Control*
+- Provision of Contingency Frequency Services for Virtual Power Plants with Aggregated Models. (2023).\n  
+*Cheng Feng*, Qixin Chen, Yi Wang, Peng-Yong Kong, Hongchao Gao, Songsong Chen.\n  
+/IEEE Transactions on Smart Grid/, 14(4), 2798-2811.
 
-.  Joint Oscillation Damping and Inertia Provision Service for Converter-Interfaced Generation. (2023).\n
-   *Cheng Feng*, Linbin Huang, Xiuqiang He, Yi Wang, Florian Dorfler, Chongqing Kang.\n
-   /Submitted to IEEE Transactions on Power Systems/, Under Review. Available on Arxiv, 2309.01321.
+- Update Scheduling for ADMM-based Energy Sharing in Virtual Power Plants Considering Massive Prosumer Access. (2023).\n  
+*Cheng Feng*, Kedi Zheng, Yangze Zhou, Peter Palensky, Qixin Chen.\n  
+/IEEE Transactions on Smart Grid/, 14(5), 3961-3975.
 
-.  Provision of Contingency Frequency Services for Virtual Power Plants with Aggregated Models. (2023).\n
-   *Cheng Feng*, Qixin Chen, Yi Wang, Peng-Yong Kong, Hongchao Gao, Songsong Chen.\n
-   /IEEE Transactions on Smart Grid/, 14(4), 2798-2811.
+- Spatial-Temporal Energy Management of Base Stations in Cellular Networks. (2021).\n  
+Chenyu Zhou, *Cheng Feng* (Contribute Equally), Yi Wang.\n  
+/IEEE Internet of Things Journal/, 9(13), 10588-10599.
 
-- *Power System Flexibility and Intelligent Energy Management*
+== *AI for Sustainable Energy Systems and Nexus*
 
-.  Spatial-Temporal Energy Management of Base Stations in Cellular Networks. (2021).\n
-   Chenyu Zhou, *Cheng Feng* (Contribute Equally), Yi Wang.\n
-   /IEEE Internet of Things Journal/, 9(13), 10588-10599.
+- Empowering the Grid Edge to Think: Applications of Artificial Intelligence for Virtual Power Plants in China. (2024).\n  
+Qixin Chen, Xuanyuan Wang, *Cheng Feng* (First Student Author), Chuyi Li, Kedi Zheng.\n 
+/IEEE Power and Energy Magazine/, 22(6): 66–77.
 
-.  Smart grid encounters edge computing: Opportunities and applications. (2021).\n
-   *Cheng Feng*, Yi Wang, Qixin Chen, Yi Ding, Goran Strbac, Chongqing Kang.\n
-    /Advances in Applied Energy/, 1, 100006.
+- Smart grid encounters edge computing: Opportunities and applications. (2021).\n  
+*Cheng Feng*, Yi Wang, Qixin Chen, Yi Ding, Goran Strbac, Chongqing Kang. \n  
+/Advances in Applied Energy/, 1, 100006. (**Highly Cited Paper**)
 
-.  Review of energy management for data centers in energy internet (in Chinese). (2020) \n  
-   *Cheng Feng*, Yi Wang, Qixin Chen, Xuan Zhang, and Gang Luo.\n
-   /Electric Power Automation Equipment/, 40(7), 1-9.
+- Smart meter data-driven customizing price design for retailers. (2019).\n  
+*Cheng Feng*, Yi Wang, Kedi Zheng, Qixin Chen.\n  
+/IEEE Transactions on Smart Grid/, 11(3), 2043–2054.
 
-.  Smart meter data-driven customizing price design for retailers. (2019).\n
-   *Cheng Feng*, Yi Wang, Kedi Zheng, Qixin Chen.\n
-   /IEEE Transactions on Smart Grid/, 11(3), 2043-2054.
+== *Energy, Communication, and Datacenter Network Optimization and Control*
 
-== Conference Papers  
+- Cyber-Physical Virtual Power Plants: Modeling, Operation, and Control. (2025).\n  
+*Cheng Feng*, Hongye Guo, Kedi Zheng, Qixin Chen, Chongqing Kang.\n  
+/Springer Book/, ISBN: 978-981-96-5357-7.
+
+- Goal-Oriented Wireless Communication Resource Allocation for Cyber-Physical Systems. (2023).\n  
+*Cheng Feng*, Kedi Zheng, Yi Wang, Kaibin Huang, Qixin Chen.\n  
+/IEEE Transactions on Wireless Communications/, 23(11): 15768–15783.
+
+- Latent diffusion model-enabled low-latency semantic communication in the presence of semantic ambiguities and wireless channel noises. (2023).\n  
+Jianhua Pei, *Cheng Feng*, Ping Wang, Hina Tabassum, Dongyuan Shi.\n  
+/IEEE Transactions on Wireless Communications/, 24(5): 4055–4072.
+
+- Frequency Regulation Service Provision for Virtual Power Plants through 5G RAN Slicing. (2022).\n  
+*Cheng Feng*, Qixin Chen, Yi Wang, Jiaqi Ma, Xuanyuan Wang.\n  
+/IEEE Transactions on Smart Grid/, 13(6), 4943–4956.
+
+- Device Access Optimization for Virtual Power Plants in Heterogeneous Networks. (2021).\n  
+*Cheng Feng*, Yi Wang, Xuanyuan Wang, Qixin Chen.\n  
+/IEEE Transactions on Smart Grid/, 13(2), 1478–1489.
+
+- Data aggregation point placement for smart meters in the smart grid. (2021).\n  
+Adrian Lang, Yi Wang, *Cheng Feng*, Cheng Feng, Eleni Stai, Gabriela Hug.\n  
+/IEEE Transactions on Smart Grid/, 13(1), 541–554.
+
+- Fusion of the 5G communication and the ubiquitous electric internet of things: application analysis and research prospects (In Chinese). (2019).\n  
+Yi Wang, Qixin Chen, Ning Zhang, *Cheng Feng* (First Student Author), et al.\n  
+/Power System Technology/, 43(5): 1575–1585.
+
+- Review of energy management for data centers in energy internet (In Chinese). (2020).\n  
+*Cheng Feng*, Yi Wang, Qixin Chen, Xuan Zhang, Gang Luo.\n  
+/Electric Power Automation Equipment/, 40(7): 1–9.
+
 
 
