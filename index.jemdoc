@@ -2,21 +2,45 @@
 ==Cheng Feng 
 
 ~~~
-{}{img_left}{pictures/Cheng_Feng-modified.png}{alt text}{243}{243}
+{}{img_left}{pictures/Cheng_Feng-modified.png}{alt text}{220}{220}
+
 I am currently Eric and Wendy Schmidt AI for Science Postdoctoral Fellow, College of Engineering, Cornell University, working with Prof. Fengqi You. \n 
-I got my Ph.D. degree at Prof. Chongqing Kang's Lab, the Department of Electrical Engineering, Tsinghua University, in June 2024. Here is my [https://github.com/VictorCFeng/Page/blob/master/postdoc.pdf CV] (Updated on 2024.Sep.18).\n
+
+I received the B.S.degree in Electrical Engineering from Huazhong University of Science and Technology in June 2019, and the Ph.D. degree in Electrical Engineering fromTsinghua University in June 2024. During February 2023 to August 2023, he was a visiting scholarin the Automatic Control Laboratory, ETH Zurich. Here is my [https://github.com/VictorCFeng/Page/blob/master/postdoc.pdf CV]\n
+
 The publications of mine can be easily found on Google scholar and ResearchGate. Welcome discussions about my research! \n
+
 E-mail(edu): chengfeng@cornell.edu \n
-[https://scholar.google.com/citations?user=IYYhpdUAAAAJ&hl Google Scholar] \n
-[https://www.researchgate.net/profile/Cheng-Feng-7 ResearchGate] \n
-[https://github.com/VictorCFeng Github] \n
-[https://www.linkedin.com/in/cheng-feng-592847272/ Linkedin]\n
+[https://scholar.google.com/citations?user=IYYhpdUAAAAJ&hl Google Scholar], [https://www.researchgate.net/profile/Cheng-Feng-7 ResearchGate], [https://github.com/VictorCFeng Github], [https://www.linkedin.com/in/cheng-feng-592847272/ Linkedin]\n
+
+
 ~~~
 
-== Research Interest
-- AI for Sustainable Energy and Network Systems
-- Renewable-dominated Power System Flexibility and Stability
-- Energy, Communication, and Datacenter Network Optimization and Control
+~~~
+{}
+Our new paper, Unified Decentralized Small-Signal Stability Criterion for Grid-Connected Converters, has been accepted by TPWRS. Check it out:
+[https://ieeexplore.ieee.org/document/11314535 C. Feng and F. You, "Unified Decentralized Small-Signal Stability Criterion for Grid-Connected Converters," in IEEE Transactions on Power Systems, doi: 10.1109/TPWRS.2025.3647533]. The relevant code is on [https://github.com/PEESEgroup/Unified-Decentralized-Small-Signal-Stability-Criterion-for-Grid-Connected-Converters Github].
+~~~
+
+== Research
+~~~
+{}{img_left}{pictures/Research.png}{Cyber-Physical Energy Systems Overview}{590}{320}
+
+
+*Grid Flexibility & Resilience*:  
+Investigates the synergy between communication and power networks to enhance grid flexibility and resilience through advanced optimization and control strategies.
+{{<img src="pictures/Direction1.png" width="300" />}} 
+
+
+*Power Electronics & New Loads*
+Explores the stability challenges and market mechanisms associated with the integration of inverter-based resources and high-demand loads, such as data centers. 
+{{<img src="pictures/Direction2.png" width="300" />}} 
+
+
+*Energy Digitization*
+Drives the digital transformation of energy systems by leveraging Generative AI and Edge AI for smart industrial applications.
+{{<img src="pictures/Direction3.png" width="300" />}} 
+~~~
 
 == Education
 - \[ 2025\/09 - Current ] Eric and Wendy Schmidt AI for Science Postdoctoral Fellow \n
@@ -37,11 +61,14 @@ Department of Electrical Engineering, Huazhong University of Science and Technol
 == Academic Serivces
 - Journal Reviewers for:\n
 •	IEEE Transactions on Power Systems\n
-•	IEEE Transactions on Control System Technology\n
-•	IEEE Transactions on Smart Grids\n
+•	IEEE Transactions on Smart Grid\n
+•	IEEE Transactions on Sustainable Energy\n
+•	IEEE Transactions on Energy Markets, Policy, and Regulation\n
+•	IEEE Open Access Journal of Power and Energy\n
 •	IEEE Transactions on Power Electronics\n
 •	IEEE Transactions on Industrial Electronics\n
-•	IEEE Transactions on Energy Markets, Policy, and Regulation\n
+•	IEEE Journal of Emerging and Selected Topics in Power Electronics\n
+•	IEEE Transactions on Control System Technology\n
 •	IEEE Transactions on Network Science and Engineering\n
 •	IEEE Internet of Things Journal\n
 •	IEEE Systems Journal\n
