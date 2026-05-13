@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CV · Cheng Feng</title>
+<link rel="stylesheet" href="tokens.css" />
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 56px; }
+
+  .page-head { padding: 36px 0 22px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; }
+  .page-head h1 { font-size: var(--fs-display); margin: 0; font-weight: 500; letter-spacing: -0.02em; line-height: var(--lh-tight); }
+  .page-head .right { text-align: right; font-family: var(--sans); font-size: 12.5px; }
+  .page-head .right a { color: var(--ink); }
+  .page-head .eyebrow { margin-bottom: 10px; }
+
+  section { padding: 26px 0; border-top: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: 1px solid var(--rule); }
+  section h2 { font-size: 19px; margin: 0 0 14px; font-weight: 500; letter-spacing: -0.005em; }
+
+  .row { display: grid; grid-template-columns: 180px 1fr; gap: 24px; padding: 10px 0; border-top: 1px dashed var(--rule); }
+  .row:first-of-type { border-top: 0; padding-top: 2px; }
+  .row .period { font-family: var(--mono); font-size: 12px; color: var(--ink-3); letter-spacing: .04em; padding-top: 2px; }
+  .row .role { font-weight: 500; font-size: 15px; }
+  .row .where { color: var(--ink-2); font-size: 14px; margin-top: 2px; }
+  .row .where a { color: inherit; border-bottom-color: var(--rule); }
+
+  .talks { padding-left: 0; list-style: none; margin: 0; counter-reset: t; }
+  .talks li { counter-increment: t; padding: 10px 0 10px 44px; border-top: 1px dashed var(--rule); position: relative; }
+  .talks li:first-child { border-top: 0; }
+  .talks li::before {
+    content: counter(t, decimal-leading-zero);
+    position: absolute; left: 0; top: 10px;
+    font-family: var(--mono); font-size: 11.5px; color: var(--accent); letter-spacing: .08em;
+  }
+  .talks li .title { font-weight: 500; font-size: 15px; }
+  .talks li .meta { color: var(--ink-3); font-size: 13px; margin-top: 2px; }
+
+  .reviewers {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 4px 24px; margin: 0; padding: 4px 0 0; list-style: none;
+  }
+  .reviewers li { padding: 4px 0; border-bottom: 1px dashed var(--rule); font-size: 13.5px; color: var(--ink-2); }
+</style>
+</head>
+<body data-screen-label="CV">
+  <div id="nav"></div>
+
+  <div class="wrap">
+    <header class="page-head">
+      <div>
+        <div class="eyebrow">Curriculum Vitae</div>
+        <h1>Cheng Feng</h1>
+      </div>
+      <div class="right">
+        <a href="https://github.com/VictorCFeng/Page/blob/master/postdoc.pdf" target="_blank" rel="noreferrer">Download PDF ↗</a><br />
+        <span style="color: var(--ink-3); font-size: 11.5px;">Last updated · May 2026</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Education &amp; Roles</h2>
+      <div class="row">
+        <div class="period">2025.09 — Now</div>
+        <div>
+          <div class="role">Eric &amp; Wendy Schmidt Science Postdoctoral Fellow</div>
+          <div class="where"><a href="https://www.peese.org/" target="_blank" rel="noreferrer">PEESE Lab</a>, Systems Engineering, Cornell University · US</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="period">2024.09 — 2025.08</div>
+        <div>
+          <div class="role">Ezra Postdoctoral Associate in Energy System Engineering</div>
+          <div class="where">PEESE Lab, Systems Engineering, Cornell University · US</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="period">2023.02 — 2023.08</div>
+        <div>
+          <div class="role">Visiting Scholar</div>
+          <div class="where"><a href="https://control.ee.ethz.ch/" target="_blank" rel="noreferrer">Automatic Control Lab (ifA)</a>, ETH Zürich · Switzerland</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="period">2019.09 — 2024.06</div>
+        <div>
+          <div class="role">Ph.D., Electrical Engineering</div>
+          <div class="where"><a href="https://www.eea.tsinghua.edu.cn/en/faculties/cqkang.htm" target="_blank" rel="noreferrer">Energy Intelligence Lab</a>, Department of Electrical Engineering, Tsinghua University · China</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="period">2015.09 — 2019.06</div>
+        <div>
+          <div class="role">B.E., Electrical Engineering</div>
+          <div class="where">Department of Electrical Engineering, Huazhong University of Science and Technology · China</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Invited Sessions &amp; Talks</h2>
+      <ol class="talks">
+        <li>
+          <div class="title">PhD Dissertation Challenge Finalist</div>
+          <div class="meta">1st IEEE PES Grid Edge Technologies Conference and Expo, April 10 to 13, 2023 · San Diego, CA</div>
+        </li>
+        <li>
+          <div class="title">Invited Reports on IoT Applications in Smart Grids</div>
+          <div class="meta">Research Highlight in Beijing Area, November 8, 2020 · Beijing, China</div>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Academic Service</h2>
+      <div style="font-family: var(--sans); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px;">Journal Reviewer</div>
+      <ul class="reviewers">
+        <li>IEEE Transactions on Power Systems</li>
+        <li>IEEE Transactions on Smart Grid</li>
+        <li>IEEE Transactions on Sustainable Energy</li>
+        <li>IEEE Transactions on Energy Markets, Policy, and Regulation</li>
+        <li>IEEE Open Access Journal of Power and Energy</li>
+        <li>IEEE Transactions on Power Electronics</li>
+        <li>IEEE Transactions on Industrial Electronics</li>
+        <li>IEEE J. of Emerging and Selected Topics in Power Electronics</li>
+        <li>IEEE Transactions on Control System Technology</li>
+        <li>IEEE Transactions on Network Science and Engineering</li>
+        <li>IEEE Internet of Things Journal</li>
+        <li>IEEE Systems Journal</li>
+        <li>IEEE Communications Magazine</li>
+        <li>Applied Energy</li>
+      </ul>
+      <div style="font-family: var(--sans); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin: 16px 0 8px;">Young Editor</div>
+      <ul class="reviewers">
+        <li>Energy Conversion and Economics</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="row">
+        <div class="period">Email</div>
+        <div id="email-cv"></div>
+      </div>
+      <div class="row">
+        <div class="period">Office</div>
+        <div>College of Engineering, Cornell University, Ithaca, NY</div>
+      </div>
+      <div class="row">
+        <div class="period">Profiles</div>
+        <div style="display: flex; gap: 18px; flex-wrap: wrap; font-family: var(--sans); font-size: 13.5px;">
+          <a href="https://scholar.google.com/citations?user=IYYhpdUAAAAJ&hl" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+          <a href="https://www.researchgate.net/profile/Cheng-Feng-7" target="_blank" rel="noreferrer">ResearchGate ↗</a>
+          <a href="https://github.com/VictorCFeng" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/cheng-feng-592847272/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="foot"></div>
+  </div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="site-data.jsx"></script>
+  <script type="text/babel">
+    ReactDOM.createRoot(document.getElementById("nav")).render(
+      <header className="site-nav">
+        <a className="brand" href="index.html">Cheng Feng <em>冯成</em></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="cv.html" className="is-active">CV</a></li>
+        </ul>
+      </header>
+    );
+    ReactDOM.createRoot(document.getElementById("email-cv")).render(<EmailLink />);
+    ReactDOM.createRoot(document.getElementById("foot")).render(<SiteFoot />);
+  </script>
+</body>
+</html>

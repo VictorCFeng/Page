@@ -1,125 +1,336 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Cheng Feng </title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Cheng Feng · Cornell University</title>
+<link rel="stylesheet" href="tokens.css" />
+<style>
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 56px; }
+
+  /* ── HERO (from variant A — photo + bio) ─────────────────────── */
+  .hero {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 36px;
+    padding: 36px 0 28px;
+    align-items: center;
+  }
+  .hero .avatar-cell { display: flex; justify-content: center; }
+  .hero .name {
+    font-size: var(--fs-display);
+    line-height: var(--lh-tight);
+    letter-spacing: -0.022em;
+    margin: 0 0 4px;
+    font-weight: 500;
+  }
+  .hero .name em {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--ink-3);
+    margin-left: 12px;
+    font-size: 0.46em;
+    vertical-align: baseline;
+    letter-spacing: 0;
+  }
+  .hero .role {
+    font-size: 14.5px;
+    color: var(--ink-2);
+    margin: 0 0 12px;
+    line-height: 1.4;
+  }
+  .hero p { margin: 0 0 10px; color: var(--ink-2); max-width: 64ch; font-size: 14.5px; line-height: 1.55; }
+  .hero .links {
+    display: flex;
+    gap: 14px 18px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    font-family: var(--sans);
+    font-size: 12.5px;
+  }
+  .hero .links a { color: var(--ink-2); }
+
+  /* ── SECTION HEADS ─────────────────────────── */
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 28px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .section-head h2 {
+    font-size: var(--fs-h1);
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: -0.012em;
+  }
+  .section-head .more {
+    font-family: var(--sans);
+    font-size: 11.5px;
+    letter-spacing: .04em;
+    border: 0;
+    color: var(--ink);
+    text-transform: uppercase;
+  }
+  .section-head .more:hover { color: var(--accent); }
+  .section-head .right-label {
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+
+  /* ── NEWS (from variant C — featured + ticker) ─────────────────────── */
+  .feature {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 0;
+    border-top: 0;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 0;
+  }
+  .feature .fig {
+    background: var(--paper-deep);
+    aspect-ratio: 880 / 527;
+    border-right: 1px solid var(--rule);
+    overflow: hidden;
+  }
+  .feature .fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .feature .body { padding: 16px 22px 20px; display: flex; flex-direction: column; gap: 7px; }
+  .feature .kicker { display: flex; gap: 14px; align-items: baseline; }
+  .feature .kicker .tag {
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .feature .kicker .date {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--ink-3);
+    letter-spacing: .04em;
+  }
+  .feature h3 {
+    font-size: 20px;
+    line-height: 1.22;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: -0.012em;
+  }
+  .feature .venue { font-style: italic; color: var(--ink-3); font-size: 13px; }
+  .feature .summary { color: var(--ink-2); margin: 0; font-size: 14px; line-height: 1.5; }
+  .feature .actions {
+    margin-top: auto;
+    display: flex;
+    gap: 16px;
+    font-family: var(--sans);
+    font-size: 12.5px;
+    padding-top: 4px;
+  }
+
+  .ticker { display: flex; flex-direction: column; }
+  .ticker .item {
+    display: grid;
+    grid-template-columns: 80px 110px 1fr;
+    gap: 18px;
+    padding: 9px 0;
+    border-top: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .ticker .item:last-child { border-bottom: 1px solid var(--rule); }
+  .ticker .item .date {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--ink-3);
+    letter-spacing: .04em;
+  }
+  .ticker .item .tag {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .ticker .item .title { font-size: 14px; font-weight: 500; line-height: 1.38; }
+  .ticker .item .venue { font-style: italic; color: var(--ink-3); font-size: 12.5px; margin-top: 1px; }
+
+  /* ── RESEARCH (from variant C — numbered editorial) ─────────────────────── */
+  .dir {
+    display: grid;
+    grid-template-columns: 44px 1fr 200px;
+    gap: 22px;
+    padding: 16px 0;
+    border-top: 1px solid var(--rule);
+    align-items: start;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+  .dir:last-of-type { border-bottom: 1px solid var(--rule); }
+  .dir:hover .dir-title { color: var(--accent); }
+  .dir:hover .dir-fig { border-color: var(--accent-soft); }
+  .dir .n {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 32px;
+    color: var(--accent);
+    line-height: 0.9;
+    padding-top: 2px;
+  }
+  .dir .dir-title {
+    font-size: 18px;
+    margin: 0 0 4px;
+    font-weight: 500;
+    letter-spacing: -0.008em;
+    transition: color .15s;
+    line-height: 1.2;
+  }
+  .dir .dir-blurb {
+    color: var(--ink-2);
+    margin: 0;
+    max-width: 60ch;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .dir .kw { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+  .dir .kw span {
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: .02em;
+    color: var(--ink-2);
+    padding: 2px 7px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--paper-soft);
+  }
+  .dir .more {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: .04em;
+    margin-top: 8px;
+    color: var(--accent);
+  }
+  .dir .dir-fig {
+    aspect-ratio: 600 / 520;
+    background: var(--paper-soft);
+    border: 1px solid var(--rule);
+    overflow: hidden;
+    transition: border-color .15s;
+  }
+  .dir .dir-fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* ── EDUCATION (from variant A — timeline rows) ─────────────────────── */
+  .edu-list { display: flex; flex-direction: column; }
+  .edu-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 24px;
+    padding: 8px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .edu-row:last-child { border-bottom: 1px solid var(--rule); }
+  .edu-period {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--ink-3);
+    letter-spacing: .04em;
+    padding-top: 2px;
+  }
+  .edu-role { font-weight: 500; font-size: 14.5px; }
+  .edu-where {
+    color: var(--ink-2);
+    font-size: 13px;
+    margin-top: 1px;
+  }
+
+  /* visitors */
+  .visitors {
+    text-align: center;
+    padding: 20px 0 4px;
+    margin-top: 32px;
+    border-top: 1px solid var(--rule);
+  }
+  .visitors .label {
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin: 12px 0 14px;
+    display: block;
+  }
+  .visitors #clustrmaps-wrap { display: inline-block; width: 320px; }
+
+  @media (max-width: 760px) {
+    .wrap { padding: 0 28px; }
+    .hero { grid-template-columns: 1fr; gap: 28px; }
+    .feature { grid-template-columns: 1fr; }
+    .feature .fig { border-right: 0; border-bottom: 1px solid var(--rule); }
+    .dir { grid-template-columns: 50px 1fr; }
+    .dir .dir-fig { grid-column: 1 / -1; }
+  }
+</style>
 </head>
-<body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="publication.html">Publications</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Cheng Feng </h1>
-</div>
-<table class="imgtable"><tr><td>
-<img src="pictures/Cheng_Feng-modified.png" alt="alt text" width="220px" height="220px" />&nbsp;</td>
-<td align="left"><p>I am currently Eric and Wendy Schmidt Science Postdoctoral Fellow, College of Engineering, Cornell University, working with Prof. Fengqi You. <br /> 
-</p>
-<p>I received the B.S. degree in Electrical Engineering from Huazhong University of Science and Technology in June 2019, and the Ph.D. degree in Electrical Engineering from Tsinghua University in June 2024. During February 2023 to August 2023, I was a visiting scholar in the Automatic Control Laboratory, ETH Zurich. Here is my <a href="https://github.com/VictorCFeng/Page/blob/master/postdoc.pdf" target=&ldquo;blank&rdquo;>CV</a><br />
-</p>
-<p>The publications of mine can be easily found on Google scholar and ResearchGate. Welcome discussions about my research! <br />
-</p>
-<p>E-mail(edu): chengfeng@cornell.edu <br />
-<a href="https://scholar.google.com/citations?user=IYYhpdUAAAAJ&amp;hl" target=&ldquo;blank&rdquo;>Google Scholar</a>, <a href="https://www.researchgate.net/profile/Cheng-Feng-7" target=&ldquo;blank&rdquo;>ResearchGate</a>, <a href="https://github.com/VictorCFeng" target=&ldquo;blank&rdquo;>Github</a>, <a href="https://www.linkedin.com/in/cheng-feng-592847272/" target=&ldquo;blank&rdquo;>Linkedin</a><br />
-</p>
-</td></tr></table>
-<div class="infoblock">
-<div class="blocktitle"></div>
-<div class="blockcontent">
-<p>Our new paper, Unified Decentralized Small-Signal Stability Criterion for Grid-Connected Converters, has been accepted by TPWRS. Check it out:
-<a href="https://ieeexplore.ieee.org/document/11314535" target=&ldquo;blank&rdquo;>C. Feng and F. You, &ldquo;Unified Decentralized Small-Signal Stability Criterion for Grid-Connected Converters,&rdquo; in IEEE Transactions on Power Systems, doi: 10.1109/TPWRS.2025.3647533</a>. The relevant code is on <a href="https://github.com/PEESEgroup/Unified-Decentralized-Small-Signal-Stability-Criterion-for-Grid-Connected-Converters" target=&ldquo;blank&rdquo;>Github</a>.
-</p>
-</div></div>
-<h2>Research</h2>
-<table class="imgtable"><tr><td>
-<img src="pictures/Research.png" alt="Cyber-Physical Energy Systems Overview" width="590px" height="320px" />&nbsp;</td>
-<td align="left"><p><b>Grid Flexibility &amp; Resilience</b>:  
-Investigates the synergy between communication and power networks to enhance grid flexibility and resilience through advanced optimization and control strategies.
-</p>
-<p><img src="pictures/Direction1.png" width="300" /> 
-</p>
-<p><b>Power Electronics &amp; New Loads</b>
-Explores the stability challenges and market mechanisms associated with the integration of inverter-based resources and high-demand loads, such as data centers. 
-</p>
-<p><img src="pictures/Direction2.png" width="300" /> 
-</p>
-<p><b>Energy Digitization</b>
-Drives the digital transformation of energy systems by leveraging digitization tools for smart industrial applications.
-</p>
-<p><img src="pictures/Direction3.png" width="300" /> 
-</p>
-</td></tr></table>
-<h2>Education</h2>
-<ul>
-<li><p>[ 2025/09 - Current ] Eric and Wendy Schmidt Science Postdoctoral Fellow <br />
-<a href="https://www.peese.org/" target=&ldquo;blank&rdquo;>PEESE Lab</a>, System Engineering, Cornell University, US. <br />
-</p>
-</li>
-<li><p>[ 2024/09 - 2025/08 ] Ezra Postdoctoral Associate in Energy System Engineering <br />
-<a href="https://www.peese.org/" target=&ldquo;blank&rdquo;>PEESE Lab</a>, System Engineering, Cornell University, US. <br />
-</p>
-</li>
-<li><p>[ 2019/09 - 2024/06 ] Ph.D., Electrical Engineering <br />
-<a href="https://www.eea.tsinghua.edu.cn/en/faculties/cqkang.htm" target=&ldquo;blank&rdquo;>Energy Intelligence Lab</a>, Department of Electrical Engineering, Tsinghua University, China <br />
-</p>
-</li>
-<li><p>[ 2023/02 - 2023/08 ] Visiting Scholar <br />
-<a href="https://control.ee.ethz.ch/" target=&ldquo;blank&rdquo;>Automatic Control Lab (ifA)</a>, Swiss Federal Institute of Technology (ETH) Zurich, Switzerland <br />
-</p>
-</li>
-<li><p>[ 2015/09 - 2019/06 ] B.E., Electrical Engineering <br />
-Department of Electrical Engineering, Huazhong University of Science and Technology, China
-</p>
-</li>
-</ul>
-<h2>Sessions and Talks</h2>
-<ol>
-<li><p>PhD Dissertation Challenge Finalist, 1st IEEE PES Grid Edge Technologies Conference and Expo, April 10-13th 2023 in San Diego, CA. 
-</p>
-</li>
-<li><p>Invited Reports about IoT Applications in Smart Grids, Research Highlight in Beijing Area, November 8, 2020 in Beijing, China.
-</p>
-</li>
-</ol>
-<h2>Academic Serivces</h2>
-<ul>
-<li><p>Journal Reviewers for:<br />
-•	IEEE Transactions on Power Systems<br />
-•	IEEE Transactions on Smart Grid<br />
-•	IEEE Transactions on Sustainable Energy<br />
-•	IEEE Transactions on Energy Markets, Policy, and Regulation<br />
-•	IEEE Open Access Journal of Power and Energy<br />
-•	IEEE Transactions on Power Electronics<br />
-•	IEEE Transactions on Industrial Electronics<br />
-•	IEEE Journal of Emerging and Selected Topics in Power Electronics<br />
-•	IEEE Transactions on Control System Technology<br />
-•	IEEE Transactions on Network Science and Engineering<br />
-•	IEEE Internet of Things Journal<br />
-•	IEEE Systems Journal<br />
-•	IEEE Communications Magazine<br />
-•	Applied Energy<br />
-</p>
-</li>
-<li><p>Young Editor for:<br />
-Energy Conversion and Economics
-</p>
-</li>
-</ul>
-<h2>Visitors</h2>
-<div style="text-align:center; margin: 12px 0;">
-  <script type="text/javascript" id="clustrmaps"
-    src="//cdn.clustrmaps.com/map_v2.js?cl=11bca6&w=a&t=n&d=eB0l7mUvIHKSDSA1PFaNsyXGa830N_pdS-rAkp7udiA&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080"></script>
-</div>
-</td>
-</tr>
-</table>
+<body data-screen-label="Home">
+  <div id="nav"></div>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="avatar-cell"><div id="avatar"></div></div>
+      <div>
+        <h1 class="name">Cheng Feng <em>冯成</em></h1>
+        <p class="role">Eric &amp; Wendy Schmidt Science Postdoctoral Fellow · Cornell University</p>
+        <p>My research spans energy and network systems, with a focus on cyber-physical systems across control, markets, and strategy. I am the Eric &amp; Wendy Schmidt Science Postdoctoral Fellow at Cornell University, working with Prof. Fengqi You at the <a href="https://www.peese.org/" target="_blank" rel="noreferrer">PEESE Lab</a>.</p>
+        <p>I work toward a future of secure, sustainable energy. My current focus is the flexibility, affordability, reliability, and resilience of energy systems under the continued growth of AI.</p>
+        <p>Previously: Ph.D. from Tsinghua University (2024); visiting scholar at the Automatic Control Lab, ETH Zürich (2023); B.E. from Huazhong University of Science and Technology (2019). Find my publications on <a href="https://scholar.google.com/citations?user=IYYhpdUAAAAJ&hl" target="_blank" rel="noreferrer">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Cheng-Feng-7" target="_blank" rel="noreferrer">ResearchGate</a>.</p>
+        <div class="links" id="links"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>News</h2>
+        <span class="right-label">2025 — 2026</span>
+      </div>
+      <div id="feature"></div>
+      <div class="ticker" id="ticker"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Research</h2>
+        <a href="research.html" class="more">All three directions →</a>
+      </div>
+      <div id="research"></div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>Education &amp; Roles</h2></div>
+      <div class="edu-list" id="edu"></div>
+    </section>
+
+    <section class="visitors">
+      <span class="label">Visitors</span>
+      <div id="clustrmaps-wrap">
+        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=eB0l7mUvIHKSDSA1PFaNsyXGa830N_pdS-rAkp7udiA&co=fbf6ea&cmo=8a3a1f&cmn=2a1d10&ct=8a7b66"></script>
+      </div>
+    </section>
+
+    <div id="foot"></div>
+  </main>
+
+  <div id="tweaks-root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="site-data.jsx"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="home-app.jsx"></script>
 </body>
 </html>

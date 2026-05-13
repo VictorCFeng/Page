@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Research · Cheng Feng</title>
+<link rel="stylesheet" href="tokens.css" />
+<style>
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 56px; }
+
+  /* page header */
+  .page-head { padding: 36px 0 24px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: end; }
+  .page-head h1 { font-size: var(--fs-display); margin: 0; line-height: var(--lh-tight); letter-spacing: -0.02em; font-weight: 500; }
+  .page-head h1 em { font-style: italic; color: var(--ink-3); font-weight: 400; }
+  .page-head .lede { color: var(--ink-2); margin: 0; font-size: 15px; line-height: 1.55; }
+  .page-head .eyebrow { margin-bottom: 10px; }
+
+  .toc { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 22px 0 10px; padding-bottom: 6px; }
+  .toc a {
+    display: block;
+    padding: 10px 14px;
+    background: var(--paper-soft);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    transition: background .15s, border-color .15s;
+  }
+  .toc a:hover { background: var(--highlight); border-color: var(--accent); }
+  .toc a .n { font-family: var(--mono); font-size: 10.5px; color: var(--accent); letter-spacing: .14em; }
+  .toc a .t { font-size: 14.5px; line-height: 1.25; font-weight: 500; margin-top: 3px; }
+
+  .dir-block {
+    padding: 40px 0;
+    border-top: 1px solid var(--rule);
+    scroll-margin-top: 24px;
+  }
+  .dir-block:last-of-type { border-bottom: 1px solid var(--rule); }
+  .dir-head { display: grid; grid-template-columns: 64px 1fr; gap: 22px; margin-bottom: 20px; align-items: start; }
+  .dir-head .n { font-family: var(--serif); font-style: italic; font-size: 42px; color: var(--accent); line-height: 0.9; }
+  .dir-head h2 { font-size: 26px; margin: 0; font-weight: 500; letter-spacing: -0.012em; }
+  .dir-head .blurb { font-size: 15px; color: var(--ink-2); margin: 6px 0 0; line-height: 1.5; max-width: 66ch; }
+
+  .dir-body {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 36px;
+    align-items: start;
+  }
+  .dir-body .fig {
+    aspect-ratio: 600 / 520;
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    position: sticky;
+    top: 24px;
+  }
+  .dir-body .fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .dir-body h3 {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+
+  .q-list { list-style: none; margin: 0 0 24px; padding: 0; counter-reset: q; }
+  .q-list li {
+    counter-increment: q;
+    padding: 10px 0 10px 44px;
+    border-top: 1px solid var(--rule);
+    position: relative;
+    color: var(--ink);
+  }
+  .q-list li:last-child { border-bottom: 1px solid var(--rule); }
+  .q-list li::before {
+    content: counter(q, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--accent);
+    letter-spacing: .08em;
+  }
+  .q-list li .qt { font-size: 14.5px; line-height: 1.4; font-weight: 500; }
+  .q-list li .qd { color: var(--ink-2); font-size: 13px; margin-top: 2px; line-height: 1.5; max-width: 62ch; }
+
+  .papers { display: flex; flex-direction: column; }
+  .paper {
+    padding: 10px 0;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  .paper:last-child { border-bottom: 1px solid var(--rule); }
+  .paper .year { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); letter-spacing: .04em; padding-top: 2px; }
+  .paper .title { font-size: 14px; font-weight: 500; line-height: 1.4; }
+  .paper .meta { font-style: italic; color: var(--ink-3); font-size: 12.5px; margin-top: 2px; }
+  .paper .links { display: flex; gap: 12px; margin-top: 4px; font-family: var(--sans); font-size: 11.5px; }
+  .paper .links a { color: var(--ink-2); }
+</style>
+</head>
+<body data-screen-label="Research">
+  <div id="nav"></div>
+
+  <div class="wrap">
+    <header class="page-head">
+      <div>
+        <div class="eyebrow">Research</div>
+        <h1>Three threads of work.</h1>
+      </div>
+      <p class="lede">My work spans energy and network systems, with a focus on cyber-physical systems. Each direction below is an ongoing thread, pursued through journal papers, code, and collaborations. Click a card to jump to its detailed treatment.</p>
+    </header>
+
+    <nav class="toc" id="toc"></nav>
+
+    <div id="directions"></div>
+
+    <div id="foot"></div>
+  </div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="site-data.jsx"></script>
+  <script type="text/babel" src="research-app.jsx"></script>
+</body>
+</html>
