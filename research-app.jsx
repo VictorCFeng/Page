@@ -4,22 +4,6 @@
 const DETAIL = {
   "01": {
     questions: [
-      { q: "How do we identify and aggregate flexibility?",
-        d: "Where flexibility actually lives across the modern grid, and how to surface it from millions of distributed energy resources." },
-      { q: "How do we secure flexibility across massive numbers of devices through communication?",
-        d: "Communication-aware aggregation, 5G slicing for grid services, and scheduling for ADMM-based coordination at scale." },
-      { q: "How do we use market mechanisms to put flexibility to work?",
-        d: "Peer-to-peer trading, contingency frequency services, and pricing designs that draw out the latent flexibility." },
-    ],
-    papers: [
-      { year: "2025", title: "Optimal Participation Design of DERs in General Frequency Shaping Services", venue: "IEEE TPWRS" },
-      { year: "2024", title: "Connection-Aware P2P Trading: Simultaneous Trading and Peer Selection", venue: "Applied Energy" },
-      { year: "2023", title: "Provision of Contingency Frequency Services for Virtual Power Plants with Aggregated Models", venue: "IEEE TSG" },
-      { year: "2023", title: "Update Scheduling for ADMM-based Energy Sharing in Virtual Power Plants", venue: "IEEE TSG" },
-    ],
-  },
-  "02": {
-    questions: [
       { q: "What regulation and grid-planning strategy fit data centers and AI infrastructure?",
         d: "How load, generation, and policy meet for the AI build-out, and how the grid should plan around it." },
       { q: "What control technology keeps a converter-dominated grid plug-and-play stable?",
@@ -33,7 +17,7 @@ const DETAIL = {
       { year: "2025", title: "Optimal Grid-Forming BESS Management Incorporating Internal Battery Physics", venue: "Applied Energy 385" },
     ],
   },
-  "03": {
+  "02": {
     questions: [
       { q: "How can AI break the disciplinary boundaries of energy systems?",
         d: "Bringing hydrology, climate, and operational data into a single learnable substrate for energy decision-making." },
@@ -45,9 +29,25 @@ const DETAIL = {
     papers: [
       { year: "2024", title: "Empowering the Grid Edge to Think: AI for Virtual Power Plants in China", venue: "IEEE Power & Energy Magazine 22(6)" },
       { year: "2023", title: "Latent Diffusion Model-enabled Low-Latency Semantic Communication", venue: "IEEE TWC 24(5)" },
-      { year: "2023", title: "Goal-Oriented Wireless Communication Resource Allocation for Cyber-Physical Systems", venue: "IEEE TWC 23(11)" },
-      { year: "2022", title: "Frequency Regulation Service Provision for VPPs through 5G RAN Slicing", venue: "IEEE TSG 13(6)" },
       { year: "2021", title: "Smart Grid Encounters Edge Computing: Opportunities and Applications", venue: "Advances in Applied Energy (Highly Cited)" },
+      { year: "2019", title: "Smart Meter Data-Driven Customizing Price Design for Retailers", venue: "IEEE TSG 11(3)" },
+    ],
+  },
+  "03": {
+    questions: [
+      { q: "How do we identify and aggregate flexibility?",
+        d: "Where flexibility actually lives across the modern grid, and how to surface it from millions of distributed energy resources." },
+      { q: "How do we secure flexibility across massive numbers of devices through communication?",
+        d: "Communication-aware aggregation, 5G slicing for grid services, and scheduling for ADMM-based coordination at scale." },
+      { q: "How do we use market mechanisms to put flexibility to work?",
+        d: "Peer-to-peer trading, contingency frequency services, and pricing designs that draw out the latent flexibility." },
+    ],
+    papers: [
+      { year: "2025", title: "Optimal Participation Design of DERs in General Frequency Shaping Services", venue: "IEEE TPWRS" },
+      { year: "2024", title: "Connection-Aware P2P Trading: Simultaneous Trading and Peer Selection", venue: "Applied Energy" },
+      { year: "2023", title: "Goal-Oriented Wireless Communication Resource Allocation for Cyber-Physical Systems", venue: "IEEE TWC 23(11)" },
+      { year: "2023", title: "Provision of Contingency Frequency Services for Virtual Power Plants with Aggregated Models", venue: "IEEE TSG" },
+      { year: "2023", title: "Update Scheduling for ADMM-based Energy Sharing in Virtual Power Plants", venue: "IEEE TSG" },
     ],
   },
 };

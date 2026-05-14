@@ -55,14 +55,6 @@ const NEWS = [
 const DIRECTIONS = [
 {
   n: "01",
-  title: "Power System Flexibility & Resilience",
-  blurb:
-  "Technical questions on identifying, aggregating, and using the flexibility hidden across modern grids. Covers DER identification, large-scale device communication, and market mechanisms for flexibility and resilience.",
-  figure: "research-1.svg",
-  keywords: ["DER identification & aggregation", "Communication for massive devices", "Market mechanisms", "Resilience"]
-},
-{
-  n: "02",
   title: "Data Centers, AI Infrastructure & Inverters",
   blurb:
   "The energy questions raised by hyperscale data centers and AI infrastructure, and the plug-and-play inverter-based resources that connect them to the grid. Spans regulation and strategy, control, and market incentives.",
@@ -70,12 +62,20 @@ const DIRECTIONS = [
   keywords: ["Data centers", "AI infrastructure", "Inverter-based resources", "Plug-and-play control"]
 },
 {
-  n: "03",
+  n: "02",
   title: "AI for Energy System Science & Engineering",
   blurb:
   "Using AI to bridge disciplinary boundaries in energy science, lift the accuracy of power-system models, and enable richer understanding of markets and users.",
   figure: "research-3.svg",
   keywords: ["Cross-disciplinary modeling", "AI-augmented control & forecasting", "Markets & users"]
+},
+{
+  n: "03",
+  title: "DER Flexibility, Coordination & Communication",
+  blurb:
+  "Where flexibility lives across the modern grid, and how to actually reach it at scale. Spans DER identification and aggregation, communication for millions of devices (5G slicing, goal-oriented and semantic communication, ADMM scheduling), and market mechanisms that put that flexibility to work.",
+  figure: "research-1.svg",
+  keywords: ["DER identification & aggregation", "Communication for massive devices", "5G & semantic communication", "Market mechanisms"]
 }];
 
 
