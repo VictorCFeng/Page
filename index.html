@@ -50,6 +50,13 @@
   }
   .hero .links a { color: var(--ink-2); }
 
+  .callout{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:center;margin:28px 0 0;padding:14px 18px;background:var(--highlight);border:1px solid var(--accent-soft)}
+  .callout-logo{height:44px;width:auto;display:block}
+  .callout-body{display:flex;flex-direction:column;gap:3px;min-width:0}
+  .callout-tag{font-family:var(--sans);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  .callout p{margin:0;font-size:14.5px;color:var(--ink);text-wrap:pretty}
+  .callout a{font-family:var(--sans);font-size:12.5px;color:var(--accent);white-space:nowrap}
+  @media (max-width:640px){.callout{grid-template-columns:1fr;gap:6px}}
   /* ── SECTION HEADS ─────────────────────────── */
   .section-head {
     display: flex;
@@ -97,7 +104,7 @@
     border-right: 1px solid var(--rule);
     overflow: hidden;
   }
-  .feature .fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .feature .fig img { width: 100%; height: 100%; object-fit: contain; display: block; padding: 14px; box-sizing: border-box; }
   .feature .body { padding: 16px 22px 20px; display: flex; flex-direction: column; gap: 7px; }
   .feature .kicker { display: flex; gap: 14px; align-items: baseline; }
   .feature .kicker .tag {
@@ -293,6 +300,7 @@
       </div>
     </section>
 
+    <aside class="callout"><img class="callout-logo" src="https://sustainability.ai.cornell.edu/files/2024/11/caisi-logo.png" alt="Cornell AI4S Initiative"><div class="callout-body"><span class="callout-tag">Call for speakers</span><p>I help organize the <strong>AI for Sustainability (AI4S) Seminar</strong> at Cornell, and we are inviting speakers for 2027. Nominations and self-nominations are welcome.</p></div><a href="https://sustainability.ai.cornell.edu/seminars/" target="_blank" rel="noreferrer">Seminar page ↗</a></aside>
     <section>
       <div class="section-head">
         <h2>News</h2>

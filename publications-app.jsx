@@ -14,6 +14,10 @@ const GROUPS = [
     title: "Data Centers, AI Infrastructure & Inverters",
     sub: "Inverter-based resources, decentralized stability, datacenter energy",
     items: [
+      { year: 2026, title: "Data Centres Asymmetrically Exacerbate Energy Burdens through Wholesale Price Increases and Regressive Grid Cost Shifting",
+        authors: [],
+        venue: "Nature Energy (accepted)",
+        badges: ["Code released"], highlight: "Code released" },
       { year: 2026, title: "Unified Decentralized Small-Signal Stability Criterion for Grid-Connected Converters",
         authors: ["Cheng Feng", "Fengqi You"],
         venue: "IEEE Transactions on Power Systems",
@@ -62,6 +66,10 @@ const GROUPS = [
     title: "DER Flexibility, Coordination & Communication",
     sub: "DERs, virtual power plants, P2P trading, frequency services, 5G & semantic communication",
     items: [
+      { year: 2026, title: "Goal-Oriented Communications for Future Cyber–Physical Systems",
+        authors: [],
+        venue: "Nature Reviews Electrical Engineering, 3, 475–492",
+        badges: ["Cover article"], highlight: "Cover article" },
       { year: 2025, title: "Optimal Participation Design of DERs in General Frequency Shaping Services",
         authors: ["Cheng Feng", "Siyuan Wang", "H. Oliver Gao", "Fengqi You"],
         venue: "IEEE Transactions on Power Systems" },

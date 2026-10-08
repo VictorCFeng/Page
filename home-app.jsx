@@ -1,4 +1,4 @@
-/* global React, ReactDOM, SITE, NEWS, DIRECTIONS, EDUCATION, Avatar, EmailLink, SiteNav, SiteFoot, TweaksPanel, TweakRadio, useTweaks */
+/* global React, ReactDOM, SITE, NEWS, DIRECTIONS, EDUCATION, Avatar, EmailLink, PaperLinks, SiteNav, SiteFoot, TweaksPanel, TweakRadio, useTweaks */
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "font": "serif"
@@ -72,6 +72,7 @@ ReactDOM.createRoot(document.getElementById("ticker")).render(
         <div className="title">{n.title}</div>
         {n.venue && <div className="venue">{n.venue}</div>}
         {n.body && <div style={{ color: "var(--ink-2)", fontSize: 14, marginTop: 4 }}>{n.body}</div>}
+        {n.links && <div style={{ marginTop: 6 }}><PaperLinks links={n.links} /></div>}
       </div>
     </div>
     )}</>
