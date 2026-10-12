@@ -48,6 +48,14 @@ const NEWS = [
   body: "The review shows that task-level metrics such as control error, inference accuracy, and decision utility, rather than bit-level metrics, govern reliable operation, and that goal-oriented communication can cut transmitted data by two to three orders of magnitude."
 },
 {
+  date: "2026 · 03",
+  tag: "Seminar",
+  title: "The first Cornell AI for Sustainability (AI4S) Seminar",
+  body: "The AI4S Seminar series held its first session at Cornell. I serve as a coordinator and host of the series. Everyone is welcome to attend.",
+  links: [
+  { label: "Seminar page", href: "https://sustainability.ai.cornell.edu/seminars/" }]
+},
+{
   date: "2025 · 11",
   tag: "Paper accepted",
   title: "Unified Decentralized Small-Signal Stability Criterion for Grid-Connected Converters",
@@ -61,47 +69,61 @@ const NEWS = [
 {
   date: "2025 · 09",
   tag: "New role",
-  title: "Started as Schmidt Science Postdoctoral Fellow at Cornell",
-  body: "Joined the PEESE Lab with Prof. Fengqi You, working on energy system and data centers."
+  title: "Joined the Cornell AI for Sustainability Initiative",
+  body: "Joined the Cornell AI for Sustainability Initiative as a Schmidt AI in Science Postdoctoral Fellow, working with Prof. Fengqi You (energy systems engineering), Prof. Carla Gomes (computational sustainability), and Prof. Alexander Flecker (ecology and evolutionary biology)."
 },
 {
   date: "2025 · 06",
   tag: "Paper accepted",
   title: "Optimal Participation Design of DERs in General Frequency Shaping Services",
-  venue: "IEEE Transactions on Power Systems"
+  venue: "IEEE Transactions on Power Systems",
+  body: "The paper proposes a generalized frequency-shaping service that coordinates heterogeneous DERs against one desired system frequency trajectory, reducing reserve costs by up to 60% in test cases."
 },
 {
   date: "2025 · 04",
   tag: "Book",
   title: "Cyber-Physical Virtual Power Plants: Modeling, Operation, and Control",
-  venue: "Springer · ISBN 978-981-96-5357-7"
+  venue: "Springer · ISBN 978-981-96-5357-7",
+  body: "The book is based on my Ph.D. thesis at Tsinghua University, which received the university's Excellent Doctoral Thesis award. It covers the modeling, operation, and control of virtual power plants as cyber-physical systems."
 }];
 
 
 const DIRECTIONS = [
 {
   n: "01",
-  title: "Data Centers, AI Infrastructure & Inverters",
-  blurb:
-  "The energy questions raised by hyperscale data centers and AI infrastructure, and the plug-and-play inverter-based resources that connect them to the grid. Spans regulation and strategy, control, and market incentives.",
-  figure: "research-2.svg",
-  keywords: ["Data centers", "AI infrastructure", "Inverter-based resources", "Plug-and-play control"]
+  tag: "Affordability",
+  sub: "Integrating computing loads, onsite energy assets, and market obligations into the physical grid",
+  title: "Data Centers and Large Digital Loads",
+  summary: "Who causes and who pays for the grid costs of AI data centers, and what connection and market rules can integrate large digital loads without shifting costs and risks to other users.",
+  blurb: "AI data centers are a new class of grid participant that combines computing load with onsite energy assets. I study how they affect electricity prices, households, and host communities, and design connection and market rules that integrate them fairly.",
+  keywords: ["Societal impacts", "Host communities", "Energy burden", "Cost allocation", "Interconnection & market rules"]
 },
 {
   n: "02",
-  title: "AI for Energy System Science & Engineering",
-  blurb:
-  "Using AI to bridge disciplinary boundaries in energy science, lift the accuracy of power-system models, and enable richer understanding of markets and users.",
-  figure: "research-3.svg",
-  keywords: ["Cross-disciplinary modeling", "AI-augmented control & forecasting", "Markets & users"]
+  tag: "Sustainability",
+  sub: "Fusing data with physical models of energy, water, and climate",
+  title: "Physics-Guided AI for Cross-Sector Decisions",
+  summary: "Physics-guided AI that corrects physical models, preserves their constraints, and carries uncertainty into energy decisions that span water, climate, and digital infrastructure.",
+  blurb: "I develop physics-guided AI that combines data with physical models of energy, water, and climate, and carries their uncertainty into planning and operating decisions.",
+  keywords: ["Physics-guided machine learning", "Uncertainty quantification", "Energy, water & climate", "Generative downscaling"]
 },
 {
   n: "03",
+  tag: "Flexibility",
+  sub: "Co-designing communication networks and device control for distributed resources",
   title: "DER Flexibility, Coordination & Communication",
-  blurb:
-  "Where flexibility lives across the modern grid, and how to actually reach it at scale. Spans DER identification and aggregation, communication for millions of devices (5G slicing, goal-oriented and semantic communication, ADMM scheduling), and market mechanisms that put that flexibility to work.",
-  figure: "research-1.svg",
-  keywords: ["DER identification & aggregation", "Communication for massive devices", "5G & semantic communication", "Market mechanisms"]
+  summary: "Communication and control that turn batteries, vehicles, buildings, and flexible loads into virtual power plants that operators can quantify, price, and schedule.",
+  blurb: "I model virtual power plants as cyber-physical systems and design communication and control methods that turn distributed devices into flexibility the grid can rely on.",
+  keywords: ["Virtual power plants", "Distributed optimization", "Goal-oriented communication", "Field deployment"]
+},
+{
+  n: "04",
+  tag: "Reliability",
+  sub: "Certifying digital controllers embedded in physical power networks",
+  title: "Stability of Power-Electronic Grids",
+  summary: "Decentralized stability certificates and performance-based services that let programmable power electronics connect safely and support the grid.",
+  blurb: "I develop stability certificates and grid services for power-electronic grids, so that programmable converters can connect safely and support the system.",
+  keywords: ["Decentralized stability", "Grid-forming inverters", "Frequency shaping services", "Grid codes"]
 }];
 
 

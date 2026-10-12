@@ -4,18 +4,24 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Research · Cheng Feng</title>
-<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="tokens.css?v=20261017" />
 <style>
   .wrap { max-width: 1000px; margin: 0 auto; padding: 0 56px; }
 
   /* page header */
-  .page-head { padding: 36px 0 24px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: end; }
+  .page-head { padding: 36px 0 24px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1fr; gap: 14px; }
   .page-head h1 { font-size: var(--fs-display); margin: 0; line-height: var(--lh-tight); letter-spacing: -0.02em; font-weight: 500; }
   .page-head h1 em { font-style: italic; color: var(--ink-3); font-weight: 400; }
-  .page-head .lede { color: var(--ink-2); margin: 0; font-size: 15px; line-height: 1.55; }
+  .page-head .lede { color: var(--ink-2); margin: 0; font-size: 15px; line-height: 1.55; max-width: 72ch; text-wrap: pretty; }
   .page-head .eyebrow { margin-bottom: 10px; }
 
-  .toc { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 22px 0 10px; padding-bottom: 6px; }
+  .methods{margin:22px 0 4px}.methods h3{font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px;font-weight:600}
+  .m-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--ink)}@media (max-width:720px){.m-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .m-grid>div{padding:12px 16px 12px 0;border-bottom:1px solid var(--rule)}
+  .m-grid b{font-size:14px;font-weight:600;color:var(--ink)}.m-grid p{margin:3px 0 0;font-size:13px;line-height:1.5;color:var(--ink-2);text-wrap:pretty}
+  .dir-head .tag{font-family:var(--sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:4px}.dir-head .sub{font-size:15px;font-style:italic;color:var(--ink-2);margin-top:3px}
+  .q-next{display:inline-block;font-family:var(--sans);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent-soft);background:var(--highlight);padding:1px 6px;border-radius:999px;margin-right:8px;vertical-align:2px}
+  .toc { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin: 22px 0 10px; padding-bottom: 6px; }
   .toc a {
     display: block;
     padding: 10px 14px;
@@ -43,7 +49,7 @@
 
   .dir-body {
     display: grid;
-    grid-template-columns: 1fr 260px;
+    grid-template-columns: minmax(0,1fr);
     gap: 36px;
     align-items: start;
   }
@@ -114,9 +120,10 @@
         <div class="eyebrow">Research</div>
         <h1>Cyber-physical energy systems.</h1>
       </div>
-      <p class="lede">I study how compute, communication, and control reshape the modern grid as a cyber-physical system — from the hyperscale data centers and inverter-based resources now driving its load and dynamics, to the AI methods that lift modeling, forecasting, and market design, to the flexibility hidden across millions of distributed devices and the communication that surfaces it. The three threads below are different entry points into the same question.</p>
+      <p class="lede">I build sustainable, affordable, and reliable cyber-physical energy systems by integrating communication, computation, and control with physical grid infrastructure. My work spans large digital loads such as AI data centers, distributed energy resources, power-electronic grids, and the links between energy, water, and climate.</p>
     </header>
 
+    <section class="methods"><h3>Methods</h3><div class="m-grid"><div><b>Causal inference</b><p>Isolates how infrastructure and operating rules change markets, prices, and households.</p></div><div><b>Optimization &amp; control</b><p>Turns physical limits into implementable tools with performance and stability guarantees.</p></div><div><b>Communication theory</b><p>Determines what information a grid decision needs and how delay, loss, and bandwidth affect the physical response.</p></div><div><b>AI for science</b><p>Fills data gaps and connects physical models across sectors and scales.</p></div></div></section>
     <nav class="toc" id="toc"></nav>
 
     <div id="directions"></div>
@@ -127,7 +134,7 @@
   <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-  <script type="text/babel" src="site-data.jsx?v=20260514"></script>
-  <script type="text/babel" src="research-app.jsx?v=20260514"></script>
+  <script type="text/babel" src="site-data.jsx?v=20261017"></script>
+  <script type="text/babel" src="research-app.jsx?v=20261017"></script>
 </body>
 </html>

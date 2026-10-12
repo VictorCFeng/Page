@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Cheng Feng · Cornell University</title>
-<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="tokens.css?v=20261017" />
 <style>
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 56px; }
 
@@ -51,6 +51,9 @@
   .hero .links a { color: var(--ink-2); }
 
   .callout{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:center;margin:28px 0 0;padding:14px 18px;background:var(--highlight);border:1px solid var(--accent-soft)}
+  .callout-plain{grid-template-columns:minmax(0,1fr) auto}
+  .callout + .callout{margin-top:10px}
+  .dir .dir-tag{font-family:var(--sans);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:3px}.dir .dir-sub{font-size:13.5px;font-style:italic;color:var(--ink-2);margin:-1px 0 5px}
   .callout-logo{height:44px;width:auto;display:block}
   .callout-body{display:flex;flex-direction:column;gap:3px;min-width:0}
   .callout-tag{font-family:var(--sans);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
@@ -169,7 +172,7 @@
   /* ── RESEARCH (from variant C — numbered editorial) ─────────────────────── */
   .dir {
     display: grid;
-    grid-template-columns: 44px 1fr 200px;
+    grid-template-columns: 44px minmax(0,1fr) 220px;
     gap: 22px;
     padding: 16px 0;
     border-top: 1px solid var(--rule);
@@ -204,7 +207,8 @@
     font-size: 14px;
     line-height: 1.5;
   }
-  .dir .kw { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+  .dir .kw { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 5px; align-content: flex-start; justify-content: flex-end; }
+  @media (max-width:720px){.dir{grid-template-columns:44px minmax(0,1fr)}.dir .kw{grid-column:2;justify-content:flex-start}}
   .dir .kw span {
     font-family: var(--sans);
     font-size: 10.5px;
@@ -300,6 +304,7 @@
       </div>
     </section>
 
+    <aside class="callout callout-plain"><div class="callout-body"><span class="callout-tag">On the job market</span><p>I am on the 2026–27 academic job market, seeking faculty positions in electrical, civil, and mechanical engineering and related fields. I welcome conversations about open positions and research collaborations.</p></div><a href="cv.html">View CV →</a></aside>
     <aside class="callout"><img class="callout-logo" src="https://sustainability.ai.cornell.edu/files/2024/11/caisi-logo.png" alt="Cornell AI4S Initiative"><div class="callout-body"><span class="callout-tag">Call for speakers</span><p>I help organize the <strong>AI for Sustainability (AI4S) Seminar</strong> at Cornell, and we are inviting speakers for 2027. Nominations and self-nominations are welcome.</p></div><a href="https://sustainability.ai.cornell.edu/seminars/" target="_blank" rel="noreferrer">Seminar page ↗</a></aside>
     <section>
       <div class="section-head">
@@ -313,7 +318,7 @@
     <section>
       <div class="section-head">
         <h2>Research</h2>
-        <a href="research.html" class="more">All three directions →</a>
+        <a href="research.html" class="more">All four directions →</a>
       </div>
       <div id="research"></div>
     </section>
@@ -338,8 +343,8 @@
   <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-  <script type="text/babel" src="site-data.jsx?v=20260514"></script>
-  <script type="text/babel" src="tweaks-panel.jsx?v=20260514"></script>
-  <script type="text/babel" src="home-app.jsx?v=20260514"></script>
+  <script type="text/babel" src="site-data.jsx?v=20261017"></script>
+  <script type="text/babel" src="tweaks-panel.jsx?v=20261017"></script>
+  <script type="text/babel" src="home-app.jsx?v=20261017"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* global React, ReactDOM, SITE, NEWS, DIRECTIONS, EDUCATION, Avatar, EmailLink, PaperLinks, SiteNav, SiteFoot, TweaksPanel, TweakRadio, useTweaks */
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "font": "serif"
+  "font": "sans"
 } /*EDITMODE-END*/;
 
 function App() {
@@ -84,12 +84,14 @@ ReactDOM.createRoot(document.getElementById("research")).render(
     <a key={d.n} href={`research.html#dir-${d.n}`} className="dir">
       <div className="n">{d.n}</div>
       <div>
+        <div className="dir-tag">{d.tag}</div>
         <h3 className="dir-title">{d.title}</h3>
-        <p className="dir-blurb">{d.blurb}</p>
-        <div className="kw">{d.keywords.map((k, i) => <span key={i}>{k}</span>)}</div>
-        <div className="more">Read in depth →</div>
+        <div className="dir-sub">{d.sub}</div>
+        <p className="dir-blurb">{d.summary || d.blurb}</p>
+                <div className="more">Read in depth →</div>
       </div>
-      <div className="dir-fig"><img src={d.figure} alt="" /></div>
+      <div className="kw">{d.keywords.map((k, i) => <span key={i}>{k}</span>)}</div>
+      
     </a>
     )}</>
 );
