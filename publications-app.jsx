@@ -5,8 +5,12 @@ const GROUPS = [
     n: "—",
     id: "g0",
     title: "Working Papers",
-    sub: "In preparation · check back soon",
-    items: [],
+    sub: "Preprints and manuscripts under review",
+    items: [
+      { year: 2026, title: "Data Center Oscillation Isolation and Grid Support: Fundamental Limits and Source-Selective Control",
+        authors: ["Cheng Feng"],
+        venue: "arXiv:2610.26812", href: "https://arxiv.org/abs/2610.26812" },
+    ],
   },
   {
     n: "01",
@@ -16,7 +20,7 @@ const GROUPS = [
     items: [
       { year: 2026, title: "Data Centres Asymmetrically Exacerbate Energy Burdens through Wholesale Price Increases and Regressive Grid Cost Shifting",
         authors: ["Cheng Feng","Fengqi You"],
-        venue: "Nature Energy (accepted)", badges: ["Code released"], highlight: "Code released" },
+        venue: "Nature Energy", href: "https://www.nature.com/articles/s41560-026-02163-x", badges: ["Code released"], highlight: "Code released" },
       { year: 2020, title: "Review of Energy Management for Data Centers in Energy Internet (In Chinese)",
         authors: ["Cheng Feng","Yi Wang","Qixin Chen","Xuan Zhang","Gang Luo"],
         venue: "Electric Power Automation Equipment, 40(7): 1–9" },
@@ -151,7 +155,7 @@ function PubRow({ p }) {
     <div className="pub">
       <span className="year">{p.year}</span>
       <div className="body">
-        <div className="title">{p.title}</div>
+        <div className="title">{p.href ? <a href={p.href} target="_blank" rel="noreferrer" style={{ color: "inherit" }}>{p.title}</a> : p.title}</div>
         <div className="authors">{renderAuthors()}</div>
         <div className="venue">{p.venue}</div>
         {p.badges && (

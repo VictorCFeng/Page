@@ -12,7 +12,7 @@ const DETAIL = {
         d: "Interconnection requirements and market designs that keep costs with the facilities that cause them." },
     ],
     papers: [
-      { year: "2026", title: "Data Centres Asymmetrically Exacerbate Energy Burdens through Wholesale Price Increases and Regressive Grid Cost Shifting", venue: "Nature Energy (accepted)", links: [{ label: "Code & data", href: "https://github.com/PEESEgroup/Data-Center-Equality" }] },
+      { year: "2026", title: "Data Centres Asymmetrically Exacerbate Energy Burdens through Wholesale Price Increases and Regressive Grid Cost Shifting", venue: "Nature Energy", links: [{ label: "Paper", href: "https://www.nature.com/articles/s41560-026-02163-x" }, { label: "Code & data", href: "https://github.com/PEESEgroup/Data-Center-Equality" }] },
       { year: "2020", title: "Review of Energy Management for Data Centers in Energy Internet (In Chinese)", venue: "Electric Power Automation Equipment 40(7)" },
     ],
   },

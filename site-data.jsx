@@ -21,15 +21,25 @@ const SITE = {
 const NEWS = [
 {
   date: "2026 · 10",
-  tag: "Paper accepted",
+  tag: "Paper published",
   title: "Data Centres Asymmetrically Exacerbate Energy Burdens through Wholesale Price Increases and Regressive Grid Cost Shifting",
   venue: "Nature Energy",
-  body: "Formally accepted in Nature Energy. The study quantifies how data-centre load growth raises wholesale electricity prices, shifts transmission costs across customer classes, and changes household energy burdens and distributional outcomes across the United States. Data and code are openly available.",
+  body: "Published in Nature Energy. The study quantifies how data-centre load growth raises wholesale electricity prices, shifts transmission costs across customer classes, and changes household energy burdens and distributional outcomes across the United States. Data and code are openly available.",
   figure: "https://raw.githubusercontent.com/PEESEgroup/Data-Center-Equality/main/results/icon.png",
   links: [
+  { label: "Nature Energy", href: "https://www.nature.com/articles/s41560-026-02163-x" },
   { label: "Code & data on GitHub", href: "https://github.com/PEESEgroup/Data-Center-Equality" }],
 
   featured: true
+},
+{
+  date: "2026 · 10",
+  tag: "Preprint",
+  title: "Data Center Oscillation Isolation and Grid Support: Fundamental Limits and Source-Selective Control",
+  venue: "arXiv:2610.26812",
+  body: "The preprint studies how a data center can keep its computing-driven power oscillations away from the grid while still providing the response required during grid disturbances. It derives the limits on achieving both goals together and designs a local storage controller that meets them.",
+  links: [
+  { label: "arXiv", href: "https://arxiv.org/abs/2610.26812" }]
 },
 {
   date: "2026 · 08",
